@@ -1,0 +1,60 @@
+{
+  "name": "open-it-maintenance-planner",
+  "version": "0.1.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "export NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@aws-amplify/backend": "^1.2.1",
+    "@aws-amplify/backend-cli": "^1.2.6",
+    "@babel/eslint-parser": "7.x",
+    "@vue/cli-plugin-babel": "5.x",
+    "@vue/cli-plugin-eslint": "5.x",
+    "@vue/cli-service": "5.x",
+    "@vue/compiler-sfc": "^3.0.0",
+    "aws-cdk": "^2.158.0",
+    "aws-cdk-lib": "^2.158.0",
+    "constructs": "^10.3.0",
+    "esbuild": "^0.25.0",
+    "eslint": "8.x",
+    "eslint-plugin-vue": "8.x",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "@aws-amplify/ui-vue": "^4.2.15",
+    "aws-amplify": "^6.6.0",
+    "bootstrap": "^5.3.3",
+    "markdown-it": "^14.1.0",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "@babel/eslint-parser",
+      "requireConfigFile": false
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

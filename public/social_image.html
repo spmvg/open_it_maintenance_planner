@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <style>
+      @import 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap';
+      @import 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap';
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #181c20;
+        font-size: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="randomElementDisplay"></p>
+    <script>
+      const myList = ["⚙️", "🔧", "🛠️", "🔩", "🧰", "💻", "🖥️", "⌨️", "🖱️", "💽", "💾", "💿", "📀", "💡", "🔌", "🛡️", "🤖", "☁️", "🔒", "🔑"];
+      const displayParagraph = document.getElementById("randomElementDisplay");
+      let previousElement = "";
+      for (let i=0; i<200; i++) {
+        const randomIndex = Math.floor(Math.random() * myList.length);
+        const randomElement = myList[randomIndex];
+        if (randomElement == previousElement) continue;
+        previousElement = randomElement;
+        displayParagraph.textContent += randomElement;
+      }
+    </script>
+  </body>
+</html>

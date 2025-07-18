@@ -1,0 +1,33 @@
+name: Update package-lock.json
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-package-lock-json:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: 18
+    - name: Update package-lock.json
+      run: |
+        git clean -dfx
+        rm package-lock.json
+        npm i
+        npm i
+    - name: Commit changes
+      run: |
+        git config --global user.name "GitHub Actions Bot"
+        git config --global user.email ""
+        git add package-lock.json
+        git commit -m "Automatic version update of package-lock.json"
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
