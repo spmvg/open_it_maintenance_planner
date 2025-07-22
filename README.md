@@ -1,6 +1,6 @@
 # Open IT Maintenance Planner
 
-A visual tool to plan, document, and manage IT maintenance tasks and dependencies. Generate maintenance reports, visualize resource relationships, and track workload over time.
+A [visual tool](https://maintenance-planner.vangemert.dev) to plan, document, and manage IT maintenance tasks and dependencies. Generate maintenance reports, visualize resource relationships, and track workload over time.
 
 ## Features
 - **Visual Resource Management:** Drag and drop resources onto a canvas to model your IT environment.
@@ -18,8 +18,11 @@ A visual tool to plan, document, and manage IT maintenance tasks and dependencie
 5. **View Reports:** Click "Show Maintenance Report" to see a timeline and event list.
 6. **Export Data:** Switch to JSON mode and use "Copy JSON" to save your work.
 
+## Live Demo
+Access the production app here: [https://maintenance-planner.vangemert.dev](https://maintenance-planner.vangemert.dev)
+
 ## FAQ
-See the in-app FAQ for answers to common questions.
+See the in-app [FAQ](https://maintenance-planner.vangemert.dev/faq) for answers to common questions.
 
 ## Development
 This project is built with [Vue.js](https://vuejs.org/).
